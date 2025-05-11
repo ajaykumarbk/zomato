@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: zomato
+  name: zomato-app
   labels:
     app: zomato
 spec:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: zomato
-        image: kastrov/zomato:latest
+        image: ajaykumara/zomato:latest
         ports:
         - containerPort: 3000
